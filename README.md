@@ -6,7 +6,7 @@ There is live petition feature supporting a residential lighting ordinance to pr
 
 **Demo**
 
-<img src="final project demo.gif" alt="progress demo 1" width="50%" />
+<img src="final project demo.gif" alt="progress demo 1" />
 
 **Final Demo Video**
 
