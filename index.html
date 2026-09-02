@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sea Turtle Conservation</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+    <link rel="icon" href="img/turticon.png">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="modal-text-container">
+                <!-- text here -->
+                <p id="thanks-modal-content">
+                Thank you for signing the petition!
+                </p>
+                <!-- button here (stretch feature) -->
+                <button id="close-modal" class="btn-close">Close</button>
+            </div>
+            <!-- image here-->
+            <img id="thanks-modal-image" src="img/thank-you.png" />
+        </div>
+    </div>
+
+    <!-- Part 1: Navbar Starter Code -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#news">News</a></li>
+                <!--- Add to Nav Bar --->
+                <li><button id="theme-button">Toggle Dark Mode</button>
+                    
+                </li>
+                
+</button>
+                <!-- Stretch Challenge: Drop Down -->
+            </ul>
+        </div>
+    <!-- Part 2: Flexbox Layout Starter Code -->
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+    <!--- Headings --->
+    <div class="header-container">
+        <div class="header-item">
+            <img id="header-img" src="img/topbannerturtle.png" />
+            <h1>Sea Turtle Conservation</h1>
+            <h3>Protecting our Flippered Friends</h3>
+        </div>
+        <div class="header-item">
+            <button class="header-button">More Info About Turtles</button>
+            <button class="header-button">How To Help</button>
+            <button class="header-button" id="reduce-motion-button">Reduce Motion</button>
+        </div>
+    </div>
+
+    <!--- About --->
+    <section id="about">
+    <h2 class="revealable">About</h2>
+    <p class="revealable">Florida hosts the nesting beaches that many sea turtles call home and instinctively return to. These species include Loggerhead, Green, Kemp's Ridley, and the hulking Leatherback sea turtles. Sea turtles have inhabited this planet for over a hundred million years, but their habitat is facing modern day threats in the form of coastal development, pollution, and climate change that threaten their survival. State and federal laws like the Endangered Species Act help protect sea turtles. Additionally, conservation efforts from everyone including you are essential to ensure that future generations of turtles will be around for future generations of humans to witness and appreciate.
+    </p>
+
+    <iframe class="revealable" width="560" height="315" src="https://www.youtube.com/embed/gOPWlRchWCE?si=Ela2ipCF4OvPCG9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <!--- Data --->
+    <section id="info">
+    <h3 class="revealable">What sea turtles call Florida home?</h3>
+    <img class="revealable" src="img/turtles.gif" width="655" style="height: auto;" />
+    <h4 class="revealable">These turtles can be found living in Florida's oceans: </h4>
+
+    <ul>
+        <li class="revealable"> Loggerhead</li>
+        <li class="revealable"> Green</li>
+        <li class="revealable"> Leatherback</li>
+        <li class="revealable"> Kemp's Ridley</li>
+        <li class="revealable"> Hawksbill</li>
+    </ul>
+    <!--- Impact --->
+    <h2 class="revealable">Impact!</h2>
+    <div class="revealable">
+    <img src="img/loggerheadidentify.png" width="655" style="height: auto;"/>
+    <h3>How to distinguish a Loggerhead?</h3>
+    <p>Loggerheads, hence the name, have bigger heads compared to other sea turtles. 
+    </p>
+    </div>
+    <div class="revealable">
+    <img src="img/loggerheadlocation.jpg" width="655" style="height: auto;" />
+    <h3>Where do Loggerheads nest?</h3>
+    <p>The locations around Florida where Loggerheads are known to nest.
+    </p>
+    </div>
+    <div class="revealable">
+    <img src="img/loggerheaddecline.jpg" width="655" style="height: auto;" />
+    <h3>Are they in danger?</h3>
+    <p>Due to habitat destruction, illegal catching, and climate change there are less and less nesting each year.
+    </p>
+    </div>
+    </section>
+
+    <!--- Petition -->
+    <div class="petition revealable" id="petition">
+
+        <h2>Sign The Sea Turtle Nesting Residential Lighting Ordinance Petition 📢</h2>
+        <p id="counter">🖊 3 people have signed this petition and support this cause.</p>
+        <div class="revealable petition-container">
+
+
+        <div class="petition-para">
+            <!-- info goes here -->
+             <p>Help protect local sea turtles by signing this petition to enact a new ordinance that restricts the lighting in and around beachfront properties. Bright lights along the shoreline can confuse sea turtle hatchlings because they are guided by the gentle moonlight to find their way to sea. By requiring downward directed, low wattage, red-colored lighting during nesting season, we can help hatchlings avoid becoming disoriented by harmful lights and give them a better chance at survival to one day come back to our beaches for future generations.</p>
+        </div>
+
+        <div class="signatures">
+            <p>🖊️ Leo from West Palm Beach supports this.</p>
+            <p>🖊️ Samantha from Jupiter supports this.</p>
+            <p>🖊️ Alex from Broward supports this.</p>
+        </div>
+
+        </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition" class="revealable">
+        <!-- inputs go here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="howmtown">Hometown:</label>
+        <input type="text" id="hometown">
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        
+  </form>
+
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button" class="revealable">Sign Now</button>
+
+    </div>
+
+
+    <!--- News --->
+    <section id="news">
+    <h2 class="revealable">Turtle News</h2>
+
+    <a class="revealable"
+        href="https://www.ucf.edu/news/critical-florida-sea-turtle-sanctuary-renamed-in-honor-of-late-ucf-biology-professor-doc-ehrhart/">
+        <article>
+            <h3>Critical Florida Sea Turtle Sanctuary Renamed in Honor of Late UCF Biology Professor “Doc” Ehrhart </h3>
+            <p>May 9, 2025</p>
+        </article>
+    </a>
+
+        <a class="revealable"
+        href="https://apnews.com/article/injured-sea-turtle-florida-scan-43e58b91407ac56e6d21594b9b925ad7">
+        <article>
+            <h3>A 302-pound loggerhead sea turtle hit by a boat gets an oversize CT scan, with a surprise</h3>
+            <p>May 25, 2025</p>
+        </article>
+    </a>
+
+        <a class="revealable"
+        href="https://www.wfla.com/news/florida/florida-coast-guard-helps-rescue-injured-sea-turtle/">
+        <article>
+            <h3>Florida Coast Guard helps rescue injured sea turtle</h3>
+            <p>May 25, 2025</p>
+        </article>
+    </a>
+    </section>
+
+    <div class="revealable footer">
+    <a href="#learn-more">Learn More</a>
+    <a href="mailto:team@seaturtleconservancy.org">Email our Team</a>
+    </div>
+
+    <!--- Add above the closing body tag </body> --->
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
